@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a reproducible problem with not-emojis.
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Include the expected and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we reproduce it?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: not-emojis version
+    validations:
+      required: true

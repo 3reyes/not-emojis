@@ -1,0 +1,33 @@
+{
+  "name": "not-emojis",
+  "version": "0.1.0",
+  "description": "A GitHub Action and CLI that finds emoji in tracked text files.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "bin": {
+    "not-emojis": "./src/cli.js"
+  },
+  "files": [
+    "action.yml",
+    "dist/",
+    "docs/",
+    "LICENSE",
+    "README.md",
+    "README.es.md",
+    "src/"
+  ],
+  "scripts": {
+    "build": "ncc build src/action.js -o dist --license licenses.txt && node scripts/escape-bundle.js",
+    "check": "node src/cli.js"
+  },
+  "dependencies": {
+    "@actions/core": "^3.0.1",
+    "emoji-regex": "^11.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.45.0"
+  }
+}

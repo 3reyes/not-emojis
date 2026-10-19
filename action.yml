@@ -1,0 +1,7 @@
+name: not-emojis
+description: Find emoji in Git-tracked text files and fail the workflow when any are found.
+author: not-emojis contributors
+
+runs:
+  using: node24
+  main: dist/index.js
