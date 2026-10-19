@@ -5,3 +5,7 @@ author: not-emojis contributors
 runs:
   using: node24
   main: dist/index.js
+
+branding:
+  icon: search
+  color: blue
